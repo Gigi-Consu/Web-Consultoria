@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM Consultoria Ambiental | Licenciamento, CAR, Outorgas e Geotecnologia</title>
+    <meta name="description" content="Engenharia e consultoria ambiental de alta performance. Licenciamento LP/LI/LO, Outorga de Água, CAR, PGRS, Supressão e Topografia com Drones.">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EM Consultoria Ambiental | Engenharia & Soluções Estratégicas">
+    <meta property="og:description" content="Segurança jurídica, desembaraço técnico e sustentabilidade econômica para o seu negócio.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            800: '#0c3528',
+                            900: '#07241b',
+                            950: '#03140e',
+                        },
+                        emerald: {
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                        },
+                        amber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        sand: '#f7faf6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7faf6;
+            color: #1e293b;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .hero-pattern {
+            background-color: #07241b;
+            background-image: radial-gradient(rgba(16, 185, 129, 0.15) 1px, transparent 1px), radial-gradient(rgba(16, 185, 129, 0.08) 1px, #07241b 1px);
+            background-size: 28px 28px;
+            background-position: 0 0, 14px 14px;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .dark-glass {
+            background: rgba(7, 36, 27, 0.78);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(16, 185, 129, 0.22);
+        }
+        .pulse-emerald {
+            animation: pulse-ring 2.8s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 16px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-emerald-500 selection:text-white">
+
+    <div class="bg-forest-950 text-emerald-300 text-xs py-2.5 px-4 border-b border-forest-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
+            <div class="flex items-center gap-3 flex-wrap">
+                <span class="inline-flex items-center gap-1.5 font-medium text-emerald-300">
+                    <i class="fas fa-certificate text-amber-400"></i> Registro e ART/CREA Habilitados
+                </span>
+                <span class="hidden sm:inline text-emerald-800">|</span>
+                <span class="hidden sm:inline text-emerald-200/80">
+                    <i class="fas fa-bolt text-amber-400"></i> Soluções Rápidas: Licenciamento, Outorga & CAR
+                </span>
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="https://www.instagram.com/emconsultoriaambiental/" target="_blank" class="hover:text-white transition flex items-center gap-1.5 font-semibold text-emerald-200">
+                    <i class="fab fa-instagram text-sm text-pink-400"></i> @emconsultoriaambiental
+                </a>
+                <a href="https://share.google/O268YWPlgB2L7CBE2" target="_blank" class="hidden md:flex items-center gap-1.5 text-emerald-200 hover:text-white transition">
+                    <i class="fab fa-google text-amber-400"></i> 5.0 no Google
+                </a>
+                <a href="#simulador" class="text-amber-400 font-bold hover:underline flex items-center gap-1">
+                    <i class="fab fa-whatsapp"></i> Fale Conosco
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Identity -->
+                <a href="#" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-forest-950 via-forest-900 to-emerald-600 flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-emerald-900/10 group-hover:scale-105 transition duration-300 ring-2 ring-emerald-500/20">
+                        <span class="text-amber-400">E</span>M
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-xl font-black tracking-tight text-forest-950 font-heading leading-tight">
+                                EM CONSULTORIA
+                            </span>
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                        </div>
+                        <span class="block text-[11px] font-bold uppercase tracking-widest text-emerald-700">
+                            Engenharia & Gestão Ambiental
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Links -->
+                <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-700">
+                    <a href="#servicos" class="hover:text-emerald-700 transition">Serviços</a>
+                    <a href="#vantagens" class="hover:text-emerald-700 transition">Por que a EM?</a>
+                    <a href="#feed-instagram" class="hover:text-emerald-700 transition flex items-center gap-1.5">
+                        <i class="fab fa-instagram text-pink-500"></i> No Instagram
+                    </a>
+                    <a href="#marketing-hub" class="hover:text-emerald-700 transition flex items-center gap-1">
+                        <i class="fas fa-bullhorn text-amber-500"></i> Kit de Postagens
+                    </a>
+                    <a href="#sobre" class="hover:text-emerald-700 transition">Sobre & Google</a>
+                </div>
+
+                <!-- Call to Action CTA -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="#simulador" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md hover:shadow-lg shadow-emerald-600/20 transition duration-300 flex items-center gap-2 transform hover:-translate-y-0.5">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        <span>Solicitar Orçamento</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2.5 rounded-xl text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 focus:outline-none transition" aria-label="Abrir Menu">
+                        <i class="fas fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/98 border-b border-gray-200 px-5 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="#servicos" class="mobile-link block px-3 py-2 text-base font-semibold text-gray-800 hover:bg-emerald-50 rounded-xl">Nossos Serviços</a>
+            <a href="#vantagens" class="mobile-link block px-3 py-2 text-base font-semibold text-gray-800 hover:bg-emerald-50 rounded-xl">Vantagens Técnicas</a>
+            <a href="#feed-instagram" class="mobile-link block px-3 py-2 text-base font-semibold text-gray-800 hover:bg-emerald-50 rounded-xl flex items-center gap-2">
+                <i class="fab fa-instagram text-pink-500"></i> Fotos do Instagram
+            </a>
+            <a href="#marketing-hub" class="mobile-link block px-3 py-2 text-base font-semibold text-gray-800 hover:bg-emerald-50 rounded-xl">Kit de Marketing & Posts</a>
+            <a href="#simulador" class="mobile-link block px-3 py-2 text-base font-bold text-emerald-700 hover:bg-emerald-50 rounded-xl">Calculadora de Orçamento</a>
+            <a href="#sobre" class="mobile-link block px-3 py-2 text-base font-semibold text-gray-800 hover:bg-emerald-50 rounded-xl">Perfil Google & Sobre</a>
+            <div class="pt-2">
+                <a href="#simulador" class="w-full py-3.5 rounded-xl bg-emerald-600 text-white text-center font-bold flex items-center justify-center gap-2 shadow-md">
+                    <i class="fab fa-whatsapp text-lg"></i> Falar com Especialista
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative hero-pattern text-white pt-14 pb-20 md:py-28 overflow-hidden">
+        <!-- Floating Visual Backdrop Shapes -->
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-forest-950/40 to-forest-950 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Column Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs sm:text-sm font-semibold shadow-inner">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span>Segurança Jurídica & Eficiência Técnica</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                        Sua atividade 100% regular, <span class="text-gradient">sem multas, embargos ou atrasos</span>.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-emerald-100/90 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Descomplicamos o Licenciamento Ambiental, Outorgas de Poços e Rios, CAR, PGRS e Mapeamentos com Drone. Conectamos seu negócio à conformidade legal com rapidez e rigor de engenharia.
+                    </p>
+
+                    <!-- Trust Metric Cards -->
+                    <div class="grid grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0 text-left">
+                        <div class="bg-forest-900/70 border border-emerald-500/20 rounded-2xl p-3.5 backdrop-blur-sm">
+                            <span class="block text-xl sm:text-2xl font-black text-emerald-400">100%</span>
+                            <span class="text-[11px] sm:text-xs text-emerald-100/80 font-medium">Conformidade Legal</span>
+                        </div>
+                        <div class="bg-forest-900/70 border border-emerald-500/20 rounded-2xl p-3.5 backdrop-blur-sm">
+                            <span class="block text-xl sm:text-2xl font-black text-amber-400">-60%</span>
+                            <span class="text-[11px] sm:text-xs text-emerald-100/80 font-medium">Tempo de Análise</span>
+                        </div>
+                        <div class="bg-forest-900/70 border border-emerald-500/20 rounded-2xl p-3.5 backdrop-blur-sm">
+                            <span class="block text-xl sm:text-2xl font-black text-emerald-400">ART</span>
+                            <span class="text-[11px] sm:text-xs text-emerald-100/80 font-medium">Laudos Habilitados</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Row -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                        <a href="#simulador" class="px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-forest-950 font-extrabold text-base shadow-xl hover:shadow-emerald-500/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3 pulse-emerald">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            <span>Diagnóstico Rápido no WhatsApp</span>
+                        </a>
+                        <a href="#feed-instagram" class="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm transition flex items-center justify-center gap-2 backdrop-blur-sm">
+                            <i class="fab fa-instagram text-pink-400"></i>
+                            <span>Ver Atuação em Campo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column Interactive Diagnostic Form Card -->
+                <div class="lg:col-span-5">
+                    <div class="dark-glass rounded-3xl p-6 sm:p-8 shadow-2xl relative border border-emerald-500/30">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-amber-400 text-forest-950 font-bold text-[11px] uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                                Triagem Expressa
+                            </span>
+                            <span class="text-xs text-emerald-300 font-semibold flex items-center gap-1">
+                                <i class="fas fa-check-circle text-emerald-400"></i> Resposta em minutos
+                            </span>
+                        </div>
+
+                        <h3 class="text-xl font-extrabold text-white mb-2">
+                            Qual regularização você necessita?
+                        </h3>
+                        <p class="text-emerald-200/80 text-xs sm:text-sm mb-6">
+                            Indique seu perfil para receber as orientações técnicas exatas para órgãos municipais e estaduais.
+                        </p>
+
+                        <div class="space-y-4 text-left">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-emerald-300 mb-1.5">Segmento de Atuação</label>
+                                <select id="hero-segmento" class="w-full bg-forest-900 border border-emerald-600/40 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                                    <option value="Agronegócio e Propriedades Rurais">Agronegócio, Fazendas e Sítios</option>
+                                    <option value="Indústria e Manufatura">Indústria & Galpões Produtivos</option>
+                                    <option value="Loteamentos e Construção Civil">Loteamentos & Construção Civil</option>
+                                    <option value="Postos de Combustíveis e Serviços">Postos de Combustíveis & Transportes</option>
+                                    <option value="Mineração, Terraplanagem e Outros">Mineração & Terraplanagem</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-emerald-300 mb-1.5">Situação Atual</label>
+                                <select id="hero-urgencia" class="w-full bg-forest-900 border border-emerald-600/40 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                                    <option value="Notificação ou Auto de Infração em Aberto">Notificação ou Auto de Infração (Urgente)</option>
+                                    <option value="Licenciamento Ambiental Completo (LP/LI/LO)">Licenciamento Ambiental (LP / LI / LO)</option>
+                                    <option value="Outorga para Poço Artesiano ou Rio">Outorga de Poço Artesiano / Captação em Rio</option>
+                                    <option value="Atualização ou Retificação do CAR">Cadastro Ambiental Rural (CAR)</option>
+                                    <option value="Exigência de Banco para Financiamento Rural">Exigência Bancária para Financiamento</option>
+                                    <option value="Elaboração de PGRS para Resíduos">Elaboração de PGRS / Resíduos</option>
+                                </select>
+                            </div>
+
+                            <button onclick="handleHeroDiagnosis()" class="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-forest-950 font-black rounded-xl text-base transition shadow-lg hover:shadow-emerald-500/40 flex items-center justify-center gap-2">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                <span>Ver Diagnóstico no WhatsApp</span>
+                            </button>
+                            <p class="text-[11px] text-center text-emerald-300/60">
+                                Atendimento confidencial e seguro diretamente com o engenheiro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="vantagens" class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-emerald-700 text-xs font-extrabold uppercase tracking-widest bg-emerald-50 px-3.5 py-1.5 rounded-md border border-emerald-200">
+                    Blindagem & Valorização
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-forest-950 mt-3">
+                    A negligência ambiental custa caro. A segurança técnica gera lucro.
+                </h2>
+                <p class="text-gray-600 mt-3 text-sm sm:text-base">
+                    Órgãos fiscalizadores e bancos aumentaram as exigências. A <strong>EM Consultoria Ambiental</strong> atua preventivamente para evitar perdas irreversíveis:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Risk 1 -->
+                <div class="bg-red-50/50 border border-red-100 rounded-3xl p-7 relative hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-2xl bg-red-100 text-red-600 flex items-center justify-center text-xl font-bold mb-5">
+                        <i class="fas fa-handcuffs"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Multas Diárias e Embargo</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Operar poços, obras ou galpões sem outorga ou licença ativa atrai penalidades monetárias cumulativas e paralisação imediata.
+                    </p>
+                    <div class="text-emerald-800 text-xs font-bold flex items-center gap-2 pt-3 border-t border-red-100">
+                        <i class="fas fa-check text-emerald-600"></i> Protegemos sua operação com laudos preventivos.
+                    </div>
+                </div>
+
+                <!-- Risk 2 -->
+                <div class="bg-amber-50/50 border border-amber-100 rounded-3xl p-7 relative hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl font-bold mb-5">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Crédito Rural Travado</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Sem CAR regularizado e certidões válidas, instituições financeiras bloqueiam recursos do Plano Safra e financiamentos agrícolas.
+                    </p>
+                    <div class="text-emerald-800 text-xs font-bold flex items-center gap-2 pt-3 border-t border-amber-100">
+                        <i class="fas fa-check text-emerald-600"></i> Dossiês completos para liberação bancária ágil.
+                    </div>
+                </div>
+
+                <!-- Risk 3 -->
+                <div class="bg-emerald-50/50 border border-emerald-100 rounded-3xl p-7 relative hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl font-bold mb-5">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Selo Verde e Valor de Mercado</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Propriedades e indústrias regularizadas têm maior valor venal, fecham grandes contratos e operam com tranquilidade jurídica.
+                    </p>
+                    <div class="text-emerald-800 text-xs font-bold flex items-center gap-2 pt-3 border-t border-emerald-100">
+                        <i class="fas fa-check text-emerald-600"></i> Gestão estratégica focada em rentabilidade.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
+                <div>
+                    <span class="text-emerald-700 font-extrabold uppercase tracking-wider text-xs bg-emerald-100/70 px-3 py-1 rounded-md">
+                        Nossas Especialidades
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-forest-950 mt-2">
+                        Soluções Completas de Engenharia Ambiental
+                    </h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl text-sm sm:text-base">
+                        Do levantamento de campo e perícia à aprovação definitiva de processos em órgãos municipais, estaduais e federais.
+                    </p>
+                </div>
+                <div>
+                    <a href="#simulador" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-700 hover:text-emerald-900 underline">
+                        Calcular orçamento personalizado <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services Grid with Integrated Visual Badges -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Licenciamento Ambiental -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div class="relative h-48 overflow-hidden bg-forest-900">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Licenciamento Ambiental" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/40 to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 text-xs font-bold text-white bg-emerald-600/90 backdrop-blur-md px-3 py-1 rounded-lg">
+                            LP • LI • LO • DLA
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Licenciamento Ambiental</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Condução completa de <strong>Licença Prévia (LP)</strong>, <strong>Instalação (LI)</strong> e <strong>Operação (LO)</strong> ou Dispensas para comércios, indústrias e empreendimentos imobiliários.
+                            </p>
+                            <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Cumprimento e monitoramento de condicionantes</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Defesas técnicas contra autuações</li>
+                            </ul>
+                        </div>
+                        <button onclick="requestSpecificService('Licenciamento Ambiental (LP, LI, LO)')" class="w-full py-2.5 rounded-xl bg-gray-50 hover:bg-emerald-50 text-emerald-800 font-bold text-xs border border-emerald-200 transition flex items-center justify-center gap-2">
+                            <span>Solicitar Licenciamento</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2: Outorga de Recursos Hídricos -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div class="relative h-48 overflow-hidden bg-forest-900">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Outorga de Água e Poços" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/40 to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 text-xs font-bold text-white bg-blue-600/90 backdrop-blur-md px-3 py-1 rounded-lg">
+                            Poços Artesianos & Rios
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Outorga de Água & Poços</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Regularização de captações superficiais (rios, represas) e subterrâneas (poços tubulares profundos) para irrigação, agropecuária e indústria.
+                            </p>
+                            <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Testes de bombeamento e vazão</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Outorga preventiva e de direito de uso</li>
+                            </ul>
+                        </div>
+                        <button onclick="requestSpecificService('Outorga de Recursos Hídricos e Poços Artesianos')" class="w-full py-2.5 rounded-xl bg-gray-50 hover:bg-emerald-50 text-emerald-800 font-bold text-xs border border-emerald-200 transition flex items-center justify-center gap-2">
+                            <span>Regularizar Uso da Água</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3: CAR & Regularização Rural -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div class="relative h-48 overflow-hidden bg-forest-900">
+                        <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80" alt="Cadastro Ambiental Rural CAR" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/40 to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 text-xs font-bold text-white bg-emerald-700/90 backdrop-blur-md px-3 py-1 rounded-lg">
+                            CAR • APP • Reserva Legal
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">CAR & Adequação Rural</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Inscrição e retificação detalhada do <strong>Cadastro Ambiental Rural</strong>, demarcação de APPs, cálculo de Reserva Legal e adesão ao PRA.
+                            </p>
+                            <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Desbloqueio de crédito e financiamento rural</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> PRADA (Plano de Recuperação de Áreas)</li>
+                            </ul>
+                        </div>
+                        <button onclick="requestSpecificService('Cadastro Ambiental Rural (CAR)')" class="w-full py-2.5 rounded-xl bg-gray-50 hover:bg-emerald-50 text-emerald-800 font-bold text-xs border border-emerald-200 transition flex items-center justify-center gap-2">
+                            <span>Desbloquear CAR</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4: PGRS & Resíduos Sólidos -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div class="relative h-48 overflow-hidden bg-forest-900">
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80" alt="Gestão de Resíduos Sólidos PGRS" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/40 to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 text-xs font-bold text-white bg-amber-600/90 backdrop-blur-md px-3 py-1 rounded-lg">
+                            PNRS • MTR • Logística Reversa
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">PGRS & Gestão de Resíduos</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Plano de Gerenciamento de Resíduos Sólidos para indústrias, comércios, oficinas e serviços de saúde (PGRSS), garantindo o alvará de funcionamento.
+                            </p>
+                            <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Emissão de MTR e rastreabilidade</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Redução de custos com transporte de resíduo</li>
+                            </ul>
+                        </div>
+                        <button onclick="requestSpecificService('PGRS e Gestão de Resíduos')" class="w-full py-2.5 rounded-xl bg-gray-50 hover:bg-emerald-50 text-emerald-800 font-bold text-xs border border-emerald-200 transition flex items-center justify-center gap-2">
+                            <span>Elaborar PGRS</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 5: Supressão Vegetal e Inventário -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div class="relative h-48 overflow-hidden bg-forest-900">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" alt="Supressão Vegetal e Inventário Florestal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/40 to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 text-xs font-bold text-white bg-green-700/90 backdrop-blur-md px-3 py-1 rounded-lg">
+                            ASV • Laudos Fitossociológicos
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Inventário Florestal & Supressão</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Autorização para Supressão de Vegetação (ASV), corte de árvores isoladas, compensação florestal e inventário quantitativo e qualitativo.
+                            </p>
+                            <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Liberação legal de áreas para cultivo ou obras</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Projetos de reflorestamento e compensação</li>
+                            </ul>
+                        </div>
+                        <button onclick="requestSpecificService('Autorização de Supressão e Inventário Florestal')" class="w-full py-2.5 rounded-xl bg-gray-50 hover:bg-emerald-50 text-emerald-800 font-bold text-xs border border-emerald-200 transition flex items-center justify-center gap-2">
+                            <span>Solicitar ASV Florestal</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 6: Topografia e Drones -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+                    <div class="relative h-48 overflow-hidden bg-forest-900">
+                        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80" alt="Aerofotogrametria com Drones" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/40 to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 text-xs font-bold text-white bg-purple-700/90 backdrop-blur-md px-3 py-1 rounded-lg">
+                            Drone 4K • Ortomosaicos • MDT
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Mapeamento com Drones & Topografia</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Aerofotogrametria de alta precisão com curvas de nível, modelos tridimensionais (MDT/MDS) e georreferenciamento de imóveis rurais e urbanos.
+                            </p>
+                            <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Ortomosaicos centimétricos georreferenciados</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500"></i> Cálculo de corte e aterro para terraplanagem</li>
+                            </ul>
+                        </div>
+                        <button onclick="requestSpecificService('Topografia e Mapeamento com Drone')" class="w-full py-2.5 rounded-xl bg-gray-50 hover:bg-emerald-50 text-emerald-800 font-bold text-xs border border-emerald-200 transition flex items-center justify-center gap-2">
+                            <span>Mapear Propriedade com Drone</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feed-instagram" class="py-20 bg-white border-t border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-4">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-50 border border-pink-200 text-pink-700 text-xs font-bold mb-2">
+                        <i class="fab fa-instagram text-sm"></i> @emconsultoriaambiental no Instagram
+                    </div>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-forest-950">
+                        Nossa Atuação e Rotina em Campo
+                    </h2>
+                    <p class="text-gray-600 text-sm sm:text-base mt-1">
+                        Acompanhe nossos levantamentos, vistorias técnicas, voos com drones e projetos entregues aos clientes.
+                    </p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="https://www.instagram.com/emconsultoriaambiental/" target="_blank" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-2">
+                        <i class="fab fa-instagram text-base"></i> Seguir Perfil
+                    </a>
+                </div>
+            </div>
+
+            <!-- Instagram Feed Visual Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Post 1 -->
+                <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-forest-950 cursor-pointer" onclick="openPhotoModal(0)">
+                        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=700&q=80" alt="Voo de Drone e Mapeamento" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-forest-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white gap-3">
+                            <span class="flex items-center gap-1 font-bold text-sm"><i class="fas fa-expand"></i> Ver foto</span>
+                        </div>
+                        <span class="absolute top-3 left-3 bg-forest-950/80 backdrop-blur-sm text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded">
+                            Geotecnologia
+                        </span>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <p class="text-xs text-gray-700 line-clamp-2 font-medium">
+                            🚁 Voo de precisão para geração de curvas de nível e delimitação de APP em área rural.
+                        </p>
+                        <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-500">
+                            <span class="text-pink-600 font-semibold"><i class="fab fa-instagram"></i> Ver post</span>
+                            <span>#Drones #Topografia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-forest-950 cursor-pointer" onclick="openPhotoModal(1)">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=80" alt="Captação e Outorga de Água" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-forest-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white gap-3">
+                            <span class="flex items-center gap-1 font-bold text-sm"><i class="fas fa-expand"></i> Ver foto</span>
+                        </div>
+                        <span class="absolute top-3 left-3 bg-forest-950/80 backdrop-blur-sm text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded">
+                            Outorga Hídrica
+                        </span>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <p class="text-xs text-gray-700 line-clamp-2 font-medium">
+                            💧 Vistoria e teste de vazão para regularização de captação hídrica em pivô central.
+                        </p>
+                        <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-500">
+                            <span class="text-pink-600 font-semibold"><i class="fab fa-instagram"></i> Ver post</span>
+                            <span>#Outorga #Agro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-forest-950 cursor-pointer" onclick="openPhotoModal(2)">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=700&q=80" alt="Consultoria Ambiental em Campo" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-forest-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white gap-3">
+                            <span class="flex items-center gap-1 font-bold text-sm"><i class="fas fa-expand"></i> Ver foto</span>
+                        </div>
+                        <span class="absolute top-3 left-3 bg-forest-950/80 backdrop-blur-sm text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded">
+                            Licenciamento
+                        </span>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <p class="text-xs text-gray-700 line-clamp-2 font-medium">
+                            🌱 Obtenção de Licença de Operação (LO) para expansão de unidade fabril e industrial.
+                        </p>
+                        <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-500">
+                            <span class="text-pink-600 font-semibold"><i class="fab fa-instagram"></i> Ver post</span>
+                            <span>#LicencaAmbiental</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-forest-950 cursor-pointer" onclick="openPhotoModal(3)">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=700&q=80" alt="Laudo Florestal e Compensação" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-forest-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white gap-3">
+                            <span class="flex items-center gap-1 font-bold text-sm"><i class="fas fa-expand"></i> Ver foto</span>
+                        </div>
+                        <span class="absolute top-3 left-3 bg-forest-950/80 backdrop-blur-sm text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded">
+                            Inventário & ASV
+                        </span>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <p class="text-xs text-gray-700 line-clamp-2 font-medium">
+                            🌳 Levantamento florístico com identificação botânica para projeto de reflorestamento.
+                        </p>
+                        <div class="mt-3 pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-500">
+                            <span class="text-pink-600 font-semibold"><i class="fab fa-instagram"></i> Ver post</span>
+                            <span>#CAR #MeioAmbiente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="py-20 bg-forest-900 text-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-10">
+                <span class="inline-block px-3.5 py-1 bg-emerald-500/20 text-emerald-400 font-bold uppercase tracking-wider text-xs rounded-full border border-emerald-500/30">
+                    Proposta Rápida Online
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">
+                    Calculadora de Serviços & Orçamento
+                </h2>
+                <p class="text-emerald-200/80 mt-2 text-sm sm:text-base">
+                    Marque as demandas do seu empreendimento e envie diretamente ao engenheiro responsável para receber parecer prévio.
+                </p>
+            </div>
+
+            <div class="bg-forest-950/90 border border-emerald-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md">
+                <form id="quote-form" onsubmit="event.preventDefault(); submitQuote();" class="space-y-6">
+                    <!-- Client Details -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-emerald-300 mb-1.5">Seu Nome / Responsável *</label>
+                            <input type="text" id="quote-name" required placeholder="Ex: Roberto Mendes" class="w-full bg-forest-900/90 border border-emerald-600/40 rounded-xl px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-emerald-300 mb-1.5">WhatsApp com DDD *</label>
+                            <input type="tel" id="quote-phone" required placeholder="Ex: (11) 98765-4321" class="w-full bg-forest-900/90 border border-emerald-600/40 rounded-xl px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-emerald-300 mb-1.5">Nome da Propriedade / Empresa</label>
+                            <input type="text" id="quote-company" placeholder="Ex: Fazenda Santa Cruz / Cerâmica Vale" class="w-full bg-forest-900/90 border border-emerald-600/40 rounded-xl px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-emerald-300 mb-1.5">Município e Estado *</label>
+                            <input type="text" id="quote-location" required placeholder="Ex: Rio Verde - GO ou Campinas - SP" class="w-full bg-forest-900/90 border border-emerald-600/40 rounded-xl px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                        </div>
+                    </div>
+
+                    <!-- Services Multi-Check -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-emerald-300 mb-3">Selecione os serviços que necessita:</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                            <label class="flex items-center gap-3 p-3 bg-forest-900/60 border border-emerald-600/30 rounded-xl cursor-pointer hover:bg-forest-800 transition">
+                                <input type="checkbox" name="services" value="Licenciamento Ambiental (LP/LI/LO)" class="accent-emerald-500 w-4 h-4 rounded">
+                                <span>Licenciamento Ambiental (LP, LI, LO)</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-forest-900/60 border border-emerald-600/30 rounded-xl cursor-pointer hover:bg-forest-800 transition">
+                                <input type="checkbox" name="services" value="Outorga d'Água e Poço Artesiano" class="accent-emerald-500 w-4 h-4 rounded">
+                                <span>Outorga d'Água / Poço Artesiano</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-forest-900/60 border border-emerald-600/30 rounded-xl cursor-pointer hover:bg-forest-800 transition">
+                                <input type="checkbox" name="services" value="Cadastro Ambiental Rural (CAR)" class="accent-emerald-500 w-4 h-4 rounded">
+                                <span>Cadastro Ambiental Rural (CAR)</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-forest-900/60 border border-emerald-600/30 rounded-xl cursor-pointer hover:bg-forest-800 transition">
+                                <input type="checkbox" name="services" value="Plano de Resíduos (PGRS/PGRCC)" class="accent-emerald-500 w-4 h-4 rounded">
+                                <span>Plano de Resíduos (PGRS)</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-forest-900/60 border border-emerald-600/30 rounded-xl cursor-pointer hover:bg-forest-800 transition">
+                                <input type="checkbox" name="services" value="Supressão Vegetal (ASV) / Laudo de Flora" class="accent-emerald-500 w-4 h-4 rounded">
+                                <span>Supressão Vegetal (ASV) / Laudos</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-3 bg-forest-900/60 border border-emerald-600/30 rounded-xl cursor-pointer hover:bg-forest-800 transition">
+                                <input type="checkbox" name="services" value="Mapeamento com Drones / Topografia" class="accent-emerald-500 w-4 h-4 rounded">
+                                <span>Drone / Mapeamento Topográfico</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Notes -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-emerald-300 mb-1.5">Descreva brevemente o prazo ou especificidade (Opcional)</label>
+                        <textarea id="quote-details" rows="2" placeholder="Ex: Recebi uma notificação do órgão estadual com prazo de 30 dias..." class="w-full bg-forest-900/90 border border-emerald-600/40 rounded-xl px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 hover:from-emerald-400 hover:to-emerald-300 text-forest-950 font-black text-base shadow-xl hover:shadow-emerald-500/40 transition duration-300 flex items-center justify-center gap-3 transform hover:-translate-y-0.5">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span>Gerar Proposta e Enviar no WhatsApp</span>
+                    </button>
+                    
+                    <div class="flex items-center justify-center gap-4 text-xs text-emerald-300/70 pt-1">
+                        <span><i class="fas fa-shield-alt text-emerald-400"></i> Dados protegidos e sigilosos</span>
+                        <span>•</span>
+                        <span><i class="fas fa-clock text-amber-400"></i> Retorno técnico em horário comercial</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="marketing-hub" class="py-20 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-emerald-700 text-xs font-extrabold uppercase tracking-widest bg-emerald-100/60 px-3.5 py-1.5 rounded-full border border-emerald-200">
+                    <i class="fas fa-bullhorn text-amber-500 mr-1"></i> Central de Atração e Captação
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-forest-950 mt-3">
+                    Kit de Divulgação & Posts para Redes Sociais
+                </h2>
+                <p class="text-gray-600 mt-2 text-sm sm:text-base">
+                    Use estes modelos prontos para publicar no Instagram <strong>@emconsultoriaambiental</strong> ou enviar no WhatsApp para potenciais clientes do agro e indústrias.
+                </p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10" id="post-tabs">
+                <button onclick="switchPostTab(0)" class="tab-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-emerald-700 text-white shadow-sm transition">
+                    Post 1: Outorga d'Água & Multas
+                </button>
+                <button onclick="switchPostTab(1)" class="tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition">
+                    Post 2: CAR & Financiamento Rural
+                </button>
+                <button onclick="switchPostTab(2)" class="tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition">
+                    Post 3: PGRS & Conformidade Industrial
+                </button>
+                <button onclick="switchPostTab(3)" class="tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 transition">
+                    Post 4: Drones & Mapeamento 3D
+                </button>
+            </div>
+
+            <!-- Content Area -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white p-6 sm:p-10 rounded-3xl border border-gray-200 shadow-sm">
+                <!-- Visual Instagram Card Preview -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div id="post-visual" class="w-full max-w-sm aspect-square rounded-2xl bg-gradient-to-br from-forest-950 via-forest-900 to-emerald-900 p-6 flex flex-col justify-between text-white shadow-2xl border-4 border-emerald-500/20 relative overflow-hidden">
+                        <div class="flex items-center justify-between border-b border-white/10 pb-3 relative z-10">
+                            <div class="flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center font-black text-forest-950 text-sm">EM</span>
+                                <span class="text-xs font-bold tracking-wider uppercase text-emerald-200">Consultoria Ambiental</span>
+                            </div>
+                            <span class="text-[10px] font-mono bg-white/10 px-2 py-0.5 rounded text-emerald-300">#DicaTécnica</span>
+                        </div>
+
+                        <div class="space-y-2 relative z-10 my-auto">
+                            <span id="card-tag" class="text-xs font-bold text-amber-400 uppercase tracking-widest">RECURSOS HÍDRICOS</span>
+                            <h3 id="card-title" class="text-2xl font-black leading-tight text-white">
+                                Você capta água sem OUTORGA?
+                            </h3>
+                            <p id="card-desc" class="text-xs text-emerald-100/90 leading-relaxed">
+                                A fiscalização intensificou as autuações. Regularize seu poço ou rio antes de receber uma notificação gravosa.
+                            </p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-3 border-t border-white/10 relative z-10 text-[11px]">
+                            <span class="text-emerald-400 font-semibold"><i class="fab fa-instagram"></i> @emconsultoriaambiental</span>
+                            <span class="bg-emerald-500 text-forest-950 px-2.5 py-1 rounded-md font-bold">Consulte o Engenheiro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text, Caption & Copy Button -->
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-md uppercase">
+                            Texto pronto para postar na rede social
+                        </span>
+                        <button onclick="copyPostCaption()" class="text-xs font-bold text-forest-900 hover:text-emerald-700 bg-gray-50 border border-gray-300 hover:border-emerald-500 px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-1.5 transition">
+                            <i class="far fa-copy"></i> <span id="copy-btn-text">Copiar Legenda</span>
+                        </button>
+                    </div>
+
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-gray-200">
+                        <pre id="post-caption" class="whitespace-pre-wrap font-sans text-sm text-gray-700 leading-relaxed">
+💦 USAR ÁGUA SEM OUTORGA PODE RESULTAR EM MULTA E EMBARGO!
+
+Seja em poço artesiano, represa, lagoa ou captação direta em rios: o uso da água exige autorização formal do órgão ambiental.
+
+⚠️ Quem não possui outorga corre o risco de:
+❌ Multas diárias pesadas
+❌ Lacre de bombas e poços
+❌ Perda de certificações e financiamentos rurais
+
+A EM Consultoria Ambiental cuida de todo o processo técnico:
+✅ Testes de vazão e laudos hidrogeológicos
+✅ Dossiê para órgãos municipais e estaduais
+✅ Agilidade na expedição da outorga
+
+Regularize sua captação com tranquilidade!
+👉 Entre em contato via WhatsApp pelo link da nossa bio ou mande mensagem no direct @emconsultoriaambiental.
+
+#OutorgaDeAgua #PocoArtesiano #ConsultoriaAmbiental #Agronegocio #Sustentabilidade #EMConsultoria</pre>
+                    </div>
+
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
+                        <h4 class="text-xs font-bold text-amber-900 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                            <i class="fas fa-lightbulb text-amber-500"></i> Dica de engajamento:
+                        </h4>
+                        <p id="marketing-strategy" class="text-xs text-amber-800">
+                            Poste nos horários de maior pico do agronegócio (07h às 08h30 ou após 18h). Compartilhe no status do WhatsApp para produtores locais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Authority -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-emerald-700 font-extrabold uppercase tracking-wider text-xs bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">
+                        Credibilidade Técnica
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-forest-950">
+                        Engenharia e Gestão Ambiental com Foco no Seu Resultado
+                    </h2>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        A <strong>EM Consultoria Ambiental</strong> atua como parceira estratégica para produtores rurais, construtoras, loteadoras e indústrias que buscam operar em conformidade rigorosa com a legislação sem entraves desnecessários.
+                    </p>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        Aliamos conhecimento aprofundado dos órgãos ambientais e tecnologia de ponta (drones, softwares de SIG e sensoriamento remoto) para agilizar aprovações e garantir sustentabilidade real.
+                    </p>
+
+                    <!-- Trust Stats -->
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="border-l-4 border-emerald-600 pl-4 py-1">
+                            <span class="block text-2xl font-black text-forest-950">100%</span>
+                            <span class="text-xs text-gray-600 font-medium">Processos Técnicos com ART</span>
+                        </div>
+                        <div class="border-l-4 border-amber-500 pl-4 py-1">
+                            <span class="block text-2xl font-black text-forest-950">Agilidade</span>
+                            <span class="text-xs text-gray-600 font-medium">Protocolos sem Retrabalho</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-4">
+                        <a href="https://share.google/O268YWPlgB2L7CBE2" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-gray-300 hover:border-emerald-500 text-gray-800 text-sm font-bold shadow-sm hover:shadow transition">
+                            <i class="fab fa-google text-red-500"></i>
+                            <span>Ver Avaliações no Google Meu Negócio</span>
+                        </a>
+                        <a href="https://www.instagram.com/emconsultoriaambiental/" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-500 text-white text-sm font-bold shadow-sm hover:shadow transition">
+                            <i class="fab fa-instagram"></i>
+                            <span>Siga @emconsultoriaambiental</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Business Representation Card -->
+                <div class="lg:col-span-6">
+                    <div class="bg-sand rounded-3xl p-8 shadow-xl border border-gray-200 space-y-6">
+                        <div class="flex items-center justify-between border-b border-gray-200 pb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-2xl bg-emerald-700 flex items-center justify-center text-white text-xl font-black shadow-md">
+                                    EM
+                                </div>
+                                <div>
+                                    <h4 class="font-extrabold text-gray-900 text-base">EM Consultoria Ambiental</h4>
+                                    <p class="text-xs text-gray-500 font-medium">Serviços Ambientais e de Engenharia</p>
+                                </div>
+                            </div>
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                                <i class="fas fa-check-circle"></i> Perfil Oficial
+                            </span>
+                        </div>
+
+                        <!-- Rating Badge -->
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-amber-200 shadow-sm">
+                            <div class="text-3xl font-black text-amber-500">5.0</div>
+                            <div>
+                                <div class="text-amber-400 text-sm flex gap-1 mb-0.5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="text-xs text-gray-600 font-medium">Excelência em laudos, agilidade e atendimento técnico</span>
+                            </div>
+                        </div>
+
+                        <!-- Feedback Reviews -->
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded-2xl text-xs space-y-2 border border-gray-100 shadow-sm">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-bold text-gray-900">Carlos Eduardo • Produtor Rural</span>
+                                    <span class="text-amber-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="text-gray-600 italic">
+                                    "A regularização do CAR e da nossa outorga de captação de água foi feita com velocidade recorde. Conseguimos liberar o custeio no banco sem dor de cabeça!"
+                                </p>
+                            </div>
+
+                            <div class="bg-white p-4 rounded-2xl text-xs space-y-2 border border-gray-100 shadow-sm">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-bold text-gray-900">Mariana Silveira • Gestora Industrial</span>
+                                    <span class="text-amber-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                </div>
+                                <p class="text-gray-600 italic">
+                                    "Excelente elaboração do PGRS e assessoria nas condicionantes da licença de operação. Recomendo para empresas que buscam tranquilidade com a fiscalização."
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="https://share.google/O268YWPlgB2L7CBE2" target="_blank" class="block text-center text-xs text-emerald-700 hover:text-emerald-900 font-bold underline">
+                            Acessar página oficial do Google Meu Negócio →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-slate-50 border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-emerald-700 text-xs font-extrabold uppercase tracking-widest bg-emerald-100/60 px-3 py-1 rounded-md">
+                    Esclarecimentos
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-forest-950 mt-2">
+                    Perguntas Frequentes
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-gray-900 text-sm sm:text-base">
+                        <span>Quanto tempo demora a aprovação de uma licença ou outorga?</span>
+                        <span class="text-emerald-600 transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                        O prazo varia pelo tipo de atividade e pelo órgão competente. Contudo, nossa atuação com laudos e projetos sem erros reduz o tempo total em até 60%, evitando idas e vindas de exigências documentais complementares.
+                    </p>
+                </details>
+
+                <details class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-gray-900 text-sm sm:text-base">
+                        <span>Recebi um auto de infração ou notificação do órgão. O que fazer?</span>
+                        <span class="text-emerald-600 transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                        O primeiro passo é não deixar o prazo administrativo expirar. Elaboramos a defesa técnica preliminar e propomos termos de ajustamento ou planos de adequação para suspender multas e restabelecer a operação.
+                    </p>
+                </details>
+
+                <details class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-gray-900 text-sm sm:text-base">
+                        <span>Como é emitido o orçamento e a contratação?</span>
+                        <span class="text-emerald-600 transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+                        Realizamos uma triagem sem custos pelo WhatsApp ou chamada online. Analisamos a documentação da propriedade ou CNPJ e emitimos uma proposta formal com escopo detalhado, cronograma e ART de responsabilidade.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-forest-950 text-white pt-16 pb-12 border-t border-forest-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Col 1: Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500 text-forest-950 flex items-center justify-center font-black text-xl">
+                            EM
+                        </div>
+                        <span class="font-heading font-extrabold text-lg text-white">EM CONSULTORIA</span>
+                    </div>
+                    <p class="text-emerald-200/70 text-xs sm:text-sm leading-relaxed">
+                        Soluções ambientais integradas com segurança técnica e jurídica para o agronegócio, construção civil e indústrias.
+                    </p>
+                    <div class="flex gap-3 text-lg">
+                        <a href="https://www.instagram.com/emconsultoriaambiental/" target="_blank" class="w-9 h-9 rounded-xl bg-forest-900 border border-emerald-500/20 flex items-center justify-center text-emerald-400 hover:bg-emerald-600 hover:text-white transition" title="Instagram Oficial">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://share.google/O268YWPlgB2L7CBE2" target="_blank" class="w-9 h-9 rounded-xl bg-forest-900 border border-emerald-500/20 flex items-center justify-center text-emerald-400 hover:bg-emerald-600 hover:text-white transition" title="Página no Google">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Services -->
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-emerald-400 mb-4">Serviços Chave</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-emerald-200/80">
+                        <li><a href="#servicos" class="hover:text-white transition">Licenciamento LP, LI e LO</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition">Outorga de Recursos Hídricos</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition">Cadastro Ambiental Rural (CAR)</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition">Plano de Resíduos (PGRS)</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition">Aerofotogrametria com Drone</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Sectors -->
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-emerald-400 mb-4">Setores Atendidos</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-emerald-200/80">
+                        <li>Agronegócio & Propriedades Rurais</li>
+                        <li>Indústrias & Galpões Logísticos</li>
+                        <li>Loteamentos & Construção Civil</li>
+                        <li>Postos de Combustíveis & Concessionárias</li>
+                        <li>Mineração & Terraplanagem</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Quick Contact -->
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-amber-400 mb-4">Atendimento Direto</h4>
+                    <div class="space-y-3 text-xs sm:text-sm text-emerald-100">
+                        <p class="flex items-center gap-2">
+                            <i class="fab fa-whatsapp text-emerald-400 text-base"></i>
+                            <span>Atendimento via WhatsApp</span>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fab fa-instagram text-pink-400 text-base"></i>
+                            <span>@emconsultoriaambiental</span>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-red-400 text-base"></i>
+                            <span>Atendimento Presencial e Online</span>
+                        </p>
+                        <div class="pt-2">
+                            <a href="#simulador" class="inline-flex w-full justify-center items-center gap-2 px-4 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-forest-950 font-extrabold text-xs shadow-md transition">
+                                <i class="fab fa-whatsapp"></i> Iniciar Proposta Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-forest-900 text-center text-xs text-emerald-300/50 flex flex-col sm:flex-row justify-between items-center gap-3">
+                <p>© 2026 EM Consultoria Ambiental. Todos os direitos reservados.</p>
+                <p>Website corporativo preparado para GitHub Pages.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#simulador" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-400 text-forest-950 p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 pulse-emerald group" title="Solicitar Orçamento Online">
+        <i class="fab fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 ease-in-out font-bold text-sm px-0 group-hover:px-2">
+            Orçamento Rápido
+        </span>
+    </a>
+
+    <!-- Photo Modal Lightbox -->
+    <div id="photo-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4" onclick="closePhotoModal()">
+        <div class="relative max-w-2xl w-full bg-forest-950 rounded-3xl overflow-hidden shadow-2xl border border-emerald-500/30" onclick="event.stopPropagation()">
+            <button onclick="closePhotoModal()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black transition">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="modal-img" src="" alt="Foto em alta resolução" class="w-full max-h-[60vh] object-cover">
+            <div class="p-6 text-white space-y-2">
+                <span id="modal-tag" class="text-xs font-bold text-emerald-400 uppercase tracking-widest"></span>
+                <h3 id="modal-title" class="text-xl font-bold"></h3>
+                <p id="modal-desc" class="text-sm text-emerald-200/80 leading-relaxed"></p>
+                <div class="pt-3 flex justify-between items-center border-t border-forest-800">
+                    <a href="https://www.instagram.com/emconsultoriaambiental/" target="_blank" class="text-xs font-bold text-pink-400 hover:underline flex items-center gap-1.5">
+                        <i class="fab fa-instagram"></i> Ver no perfil @emconsultoriaambiental
+                    </a>
+                    <button onclick="closePhotoModal()" class="text-xs font-semibold text-gray-400 hover:text-white">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Replacement for window.alert -->
+    <div id="toast-message" class="fixed top-5 right-5 z-50 hidden bg-forest-900 border-2 border-emerald-400 text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 text-sm transition-all duration-300">
+        <i class="fas fa-check-circle text-emerald-400 text-xl" id="toast-icon"></i>
+        <span id="toast-text" class="font-medium">Mensagem copiada com sucesso!</span>
+    </div>
+
+    <script>
+        // Gallery items matching Instagram operational posts
+        const galleryItems = [
+            {
+                img: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
+                tag: "Geotecnologia & Drone",
+                title: "Mapeamento Topográfico e Modelo 3D de Fazenda",
+                desc: "Voo com aeronave não tripulada para obtenção de curvas de nível, orotofotomosaico centimétrico e demarcação exata das Áreas de Preservação Permanente (APP) e Reserva Legal."
+            },
+            {
+                img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+                tag: "Recursos Hídricos",
+                title: "Teste de Vazão e Regularização de Outorga de Água",
+                desc: "Equipamentos de medição hidrológica em campo para formalização de outorga de poço tubular profundo e captação superficial para pivôs de irrigação."
+            },
+            {
+                img: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80",
+                tag: "Licenciamento Ambiental",
+                title: "Vistoria Técnica para Emissão de Licença de Operação (LO)",
+                desc: "Acompanhamento detalhado das condicionantes ambientais em planta industrial, prevenindo paralisações e garantindo regularidade junto ao órgão fiscalizador."
+            },
+            {
+                img: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+                tag: "Engenharia Florestal",
+                title: "Inventário Fitossociológico e Laudo de Fauna/Flora",
+                desc: "Levantamento detalhado de espécimes arbóreos e cálculo volumétrico de biomassa para autorização de supressão vegetal (ASV) com compensação ecológica."
+            }
+        ];
+
+        function openPhotoModal(index) {
+            const item = galleryItems[index];
+            if (!item) return;
+
+            document.getElementById('modal-img').src = item.img;
+            document.getElementById('modal-tag').innerText = item.tag;
+            document.getElementById('modal-title').innerText = item.title;
+            document.getElementById('modal-desc').innerText = item.desc;
+            document.getElementById('photo-modal').classList.remove('hidden');
+        }
+
+        function closePhotoModal() {
+            document.getElementById('photo-modal').classList.add('hidden');
+        }
+
+        // Database of Marketing Posts
+        const marketingPosts = [
+            {
+                tag: "RECURSOS HÍDRICOS & POÇOS",
+                title: "Você capta água sem OUTORGA?",
+                desc: "A fiscalização intensificou as autuações. Regularize seu poço ou rio antes de receber uma notificação gravosa.",
+                caption: `💦 USAR ÁGUA SEM OUTORGA PODE RESULTAR EM MULTA E EMBARGO!
+
+Seja em poço artesiano, represa, lagoa ou captação direta em rios: o uso da água exige autorização formal do órgão ambiental.
+
+⚠️ Quem não possui outorga corre o risco de:
+❌ Multas diárias pesadas
+❌ Lacre de bombas e poços
+❌ Perda de certificações e financiamentos rurais
+
+A EM Consultoria Ambiental cuida de todo o processo técnico:
+✅ Testes de vazão e laudos hidrogeológicos
+✅ Dossiê para órgãos municipais e estaduais
+✅ Agilidade na expedição da outorga
+
+Regularize sua captação com tranquilidade!
+👉 Entre em contato via WhatsApp pelo link da nossa bio ou mande mensagem no direct @emconsultoriaambiental.
+
+#OutorgaDeAgua #PocoArtesiano #ConsultoriaAmbiental #Agronegocio #Sustentabilidade #EMConsultoria`,
+                strategy: "Poste nos horários de maior pico do agronegócio (07h às 08h30 ou após 18h). Compartilhe no status do WhatsApp para produtores locais."
+            },
+            {
+                tag: "CRÉDITO RURAL & BANCOS",
+                title: "CAR Travado? Seu Financiamento em Risco!",
+                desc: "Sem o Cadastro Ambiental Rural aprovado, bancos não liberam recursos do Plano Safra e custeio agrícola.",
+                caption: `🚜 PRODUTOR RURAL: NÃO PERCA SEU FINANCIAMENTO POR CONTA DO CAR!
+
+Você sabia que cooperativas e instituições financeiras (Banco do Brasil, Sicoob, Sicredi, etc.) não liberam crédito para propriedades com pendências ou sobreposições no CAR?
+
+Se você necessita de:
+📌 Inscrição ou Retificação do CAR
+📌 Delimitação de Reserva Legal e APP
+📌 Adesão ao Programa de Regularização Ambiental (PRA)
+
+A EM Consultoria Ambiental executa todo o mapeamento com alta precisão georreferenciada.
+
+Evite surpresas no momento de financiar maquinários e insumos!
+Chame nossa equipe no WhatsApp pelo link da bio ou mande mensagem no direct @emconsultoriaambiental.
+
+#CAR #CadastroAmbientalRural #CreditoRural #PlanoSafra #ProdutorRural #AgroTech #EMConsultoria`,
+                strategy: "Perfeito para veicular em semanas de abertura de linhas de crédito agrícola ou pré-plantio."
+            },
+            {
+                tag: "INDÚSTRIAS & GALPÕES",
+                title: "O PGRS da sua Empresa está em dia?",
+                desc: "A ausência do Plano de Gerenciamento de Resíduos Sólidos impede a renovação do alvará de funcionamento.",
+                caption: `🏭 EMPRESÁRIO: O PLANO DE GERENCIAMENTO DE RESÍDUOS (PGRS) ESTÁ EM DIA?
+
+Pela Lei 12.305/10 (Política Nacional de Resíduos Sólidos), empreendimentos comerciais, industriais e de saúde devem comprovar a destinação legal dos resíduos gerados.
+
+A ausência do documento acarreta:
+❌ Trancamento da renovação do Alvará
+❌ Multas ambientais e fiscais
+❌ Perda de contratos com clientes corporativos que exigem conformidade ESG
+
+Na EM Consultoria Ambiental:
+1️⃣ Mapeamos toda a geração de resíduos
+2️⃣ Elaboramos o PGRS completo com ART assinada
+3️⃣ Otimizamos custos de descarte e destinação
+
+Regularize sua empresa hoje mesmo!
+👉 Fale conosco pelo WhatsApp no perfil @emconsultoriaambiental.
+
+#PGRS #ResiduosSolidos #GestaoAmbiental #ComplianceAmbiental #Industria #Alvara #EMConsultoria`,
+                strategy: "Excelente post para impulsionar no Instagram e LinkedIn mirando proprietários de pequenas e médias indústrias."
+            },
+            {
+                tag: "TECNOLOGIA & PRECISÃO",
+                title: "Drones: O futuro da Topografia e Meio Ambiente",
+                desc: "Mapeamento aéreo com resolução centimétrica para delimitação territorial e planejamento produtivo.",
+                caption: `🚁 COMO O MAPEAMENTO COM DRONES ACELERA SEU PROJETO AMBIENTAL?
+
+A tecnologia de aerofotogrametria substitui semanas de caminhamento de campo por horas de voo inteligente:
+
+✨ Modelos Digitais de Elevação e Terreno (MDT/MDS)
+✨ Identificação precisa de APPs e cursos d'água
+✨ Ortomosaicos em 4K para projetos civis e loteamentos
+✨ Redução comprovada nos prazos de aprovação nos órgãos
+
+A EM Consultoria Ambiental combina equipamentos modernos à engenharia especializada.
+
+Quer saber como mapear sua propriedade ou obra?
+Chame no direct @emconsultoriaambiental ou clique no link da bio!
+
+#DronesNaEngenharia #MapeamentoComDrone #Topografia #ConsultoriaAmbiental #EMConsultoria`,
+                strategy: "Acompanhe esse post publicando nos Stories um vídeo curto de drone em campo para gerar grande curiosidade."
+            }
+        ];
+
+        function switchPostTab(index) {
+            const post = marketingPosts[index];
+            if (!post) return;
+
+            const buttons = document.querySelectorAll('#post-tabs .tab-btn');
+            buttons.forEach((btn, i) => {
+                if (i === index) {
+                    btn.classList.remove('bg-white', 'text-gray-700', 'border', 'border-gray-200');
+                    btn.classList.add('bg-emerald-700', 'text-white');
+                } else {
+                    btn.classList.remove('bg-emerald-700', 'text-white');
+                    btn.classList.add('bg-white', 'text-gray-700', 'border', 'border-gray-200');
+                }
+            });
+
+            document.getElementById('card-tag').innerText = post.tag;
+            document.getElementById('card-title').innerText = post.title;
+            document.getElementById('card-desc').innerText = post.desc;
+
+            document.getElementById('post-caption').innerText = post.caption;
+            document.getElementById('marketing-strategy').innerText = post.strategy;
+        }
+
+        function copyPostCaption() {
+            const captionText = document.getElementById('post-caption').innerText;
+            const textarea = document.createElement('textarea');
+            textarea.value = captionText;
+            document.body.appendChild(textarea);
+            textarea.select();
+            
+            try {
+                document.execCommand('copy');
+                showToast("Legenda copiada com sucesso! Pronta para colar no Instagram.");
+                const btn = document.getElementById('copy-btn-text');
+                btn.innerText = "Copiado!";
+                setTimeout(() => { btn.innerText = "Copiar Legenda"; }, 2500);
+            } catch (err) {
+                showToast("Por favor selecione o texto manualmente.", true);
+            } finally {
+                document.body.removeChild(textarea);
+            }
+        }
+
+        function showToast(text, isError = false) {
+            const toast = document.getElementById('toast-message');
+            const toastText = document.getElementById('toast-text');
+            const toastIcon = document.getElementById('toast-icon');
+
+            toastText.innerText = text;
+            if (isError) {
+                toast.classList.remove('border-emerald-400');
+                toast.classList.add('border-red-500');
+                toastIcon.className = "fas fa-exclamation-circle text-red-400 text-xl";
+            } else {
+                toast.classList.remove('border-red-500');
+                toast.classList.add('border-emerald-400');
+                toastIcon.className = "fas fa-check-circle text-emerald-400 text-xl";
+            }
+
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+
+        function handleHeroDiagnosis() {
+            const segmento = document.getElementById('hero-segmento').value;
+            const urgencia = document.getElementById('hero-urgencia').value;
+
+            const text = encodeURIComponent(
+                `Olá, equipe EM Consultoria Ambiental!\n\n` +
+                `Gostaria de um diagnóstico prévio para o meu negócio:\n` +
+                `🏢 *Segmento:* ${segmento}\n` +
+                `⚠️ *Necessidade Principal:* ${urgencia}\n\n` +
+                `Como podemos proceder com a análise técnica?`
+            );
+
+            window.open(`https://wa.me/?text=${text}`, '_blank');
+        }
+
+        function requestSpecificService(serviceName) {
+            const text = encodeURIComponent(
+                `Olá, EM Consultoria Ambiental!\n\n` +
+                `Gostaria de solicitar informações e orçamento para o serviço de: *${serviceName}*.\n` +
+                `Aguardo orientações sobre as etapas e prazos!`
+            );
+            window.open(`https://wa.me/?text=${text}`, '_blank');
+        }
+
+        function submitQuote() {
+            const name = document.getElementById('quote-name').value.trim();
+            const phone = document.getElementById('quote-phone').value.trim();
+            const company = document.getElementById('quote-company').value.trim() || "Não informado";
+            const location = document.getElementById('quote-location').value.trim();
+            const details = document.getElementById('quote-details').value.trim();
+
+            const checkedBoxes = document.querySelectorAll('input[name="services"]:checked');
+            const selectedServices = Array.from(checkedBoxes).map(cb => `• ${cb.value}`).join('\n');
+
+            if (!name || !phone || !location) {
+                showToast("Por favor, preencha os campos obrigatórios (*)", true);
+                return;
+            }
+
+            const servicesText = selectedServices.length > 0 ? selectedServices : "• Avaliação técnica geral e regularização";
+
+            const message = encodeURIComponent(
+                `📋 *SOLICITAÇÃO DE ORÇAMENTO - EM CONSULTORIA AMBIENTAL*\n\n` +
+                `👤 *Responsável:* ${name}\n` +
+                `📱 *Contato:* ${phone}\n` +
+                `🏢 *Empresa/Fazenda:* ${company}\n` +
+                `📍 *Localização:* ${location}\n\n` +
+                `🛠️ *Serviços de Interesse:*\n${servicesText}\n\n` +
+                (details ? `📝 *Observações Adicionais:* ${details}\n\n` : '') +
+                `Solicito retorno para agendarmos uma análise dos documentos.`
+            );
+
+            showToast("Redirecionando para o WhatsApp com os dados da proposta...");
+            setTimeout(() => {
+                window.open(`https://wa.me/?text=${message}`, '_blank');
+            }, 700);
+        }
+
+        // Mobile Menu Navigation Controls
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Initialize First Marketing Tab on Window Load
+        window.onload = function() {
+            switchPostTab(0);
+        };
+    </script>
+</body>
+</html>
